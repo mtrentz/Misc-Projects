@@ -1,1 +1,1 @@
-Compiling many common portuguese words, last and first names, city names and celebritiy names into a long ling, without any accent or spaces to be used as a dictionary in www.keiranking.com/phil, a crossword puzzle creator website.
+Compiling many common portuguese words, last and first names, city names and celebritiy names into a long list, without any accent or spaces to be used as a dictionary in www.keiranking.com/phil, a crossword puzzle creator website.
