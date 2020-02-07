@@ -1,7 +1,8 @@
 import numpy as np
+import timeit
+import time
 
-# Solves sudoku boards. Main idea is to keep finding new algorithms and compare time.
-
+# Solves sudoku boards.
 board = [[0,5,7,0,6,1,9,0,0],
          [0,0,8,0,0,0,1,4,7],
          [2,1,0,0,0,0,0,0,0],
@@ -50,9 +51,22 @@ def solver(bo):
                 return True
             bo[y][x] = 0
     return False
-            
+
 
 print("---------")
-solver(board)
-print(board)
+new_board = board.copy()
+solver(new_board)
+print(new_board)
 
+# Timing it
+print('')
+print('Mean time to execute is:')
+measures = []
+for run in range(10):
+    new_board = board.copy()
+    start = time.time()
+    solver(new_board)
+    end = time.time()
+    measures.append(end - start)
+
+print(sum(measures)/len(measures))
