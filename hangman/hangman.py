@@ -4,7 +4,8 @@ import collections
 """
 Making guesses on a hangman game. Tried guessing by frequency but the word list is too small. Guessing from a larger database seems to be the best.
 
-Finding some problems where words have too many consonants. By occurance, first guess will almost always be a vowel. Have to implement a rule that, if a vowel is found on a small word, it will probably be best to start guessing some consonants.
+Finding some problems where words have too many consonants. By occurance, first guess will almost always be a vowel. 
+Have to implement a rule that, if a vowel is found on a small word, it will probably be best to start guessing some consonants.
 """
 
 def print_game(game):
